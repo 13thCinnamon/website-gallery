@@ -8,19 +8,8 @@
 	if(!$connect){
 		die();
 	}
+    // Список жанров для фильтра
     $genres = mysqli_query($connect, "SELECT * FROM `genre`");
-
-    if(isset($_POST['delete_from_db'])){
-        $photo_id = $_POST['photo_id'];
-        $photo_id = mysqli_real_escape_string($connect, $photo_id);
-        
-        $sql_delete_from_db = "DELETE FROM photo WHERE photo_id = '$photo_id'";
-        if (mysqli_query($connect, $sql_delete_from_db)) {
-            echo '<script>alert("Изображение удалено")</script>';
-        } else {
-            echo '<script>alert("Ошибка при удалении изображения")</script>';
-        }
-    }
 ?>
 
 <!DOCTYPE html>

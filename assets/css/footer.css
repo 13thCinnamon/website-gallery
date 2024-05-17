@@ -1,0 +1,18 @@
+/* --footer --*/
+
+.footer {
+    background: black;
+    padding: 25px 0;
+  }
+  
+  .footer_text {
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    text-align: center;
+    font-weight: 900;
+    font-size: 18px;
+}
+
+/* --footer --*/
+
+
